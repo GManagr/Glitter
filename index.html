@@ -3,7 +3,7 @@
 
 <head>
     <!-- Theme Made By www.w3schools.com -->
-    <title>Welcome to Glitter</title>
+    <title>GCC</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -284,13 +284,13 @@
     </nav>
 
     <div class="jumbotron text-center">
-        <h1>Glitter</h1>
-        <p>Building a Cognitive Community</p>
+        <h1>Glitter Computing Club</h1>
+        <p>Enhance your capability with computing.</p>
         <form>
             <div class="input-group">
                 <input type="email" class="form-control" size="50" placeholder="Email Address" required>
                 <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger">Subscribe</button>
+                    <button type="button" onclick="alrt()" class="btn btn-danger">Subscribe</button>
                 </div>
             </div>
         </form>
@@ -540,7 +540,7 @@
                     rows="5"></textarea><br>
                 <div class="row">
                     <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                        <button class="btn btn-default pull-right"  onclick="msgsend()" type="submit">Send</button>
                     </div>
                 </div>
             </div>
@@ -576,6 +576,12 @@
     </div>
 
     <script>
+        function msgsend(){
+            alert("Thank you for sending us message");
+        }
+        function alrt(){
+            alert("Thank you for subscribe");
+        }
         $(document).ready(function () {
             // Add smooth scrolling to all links in navbar + footer link
             $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
