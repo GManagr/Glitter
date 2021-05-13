@@ -1463,6 +1463,13 @@ dd {
   .dl-horizontal dd {
     margin-left: 180px;
   }
+  .pull-right{
+    width: 23vw;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 20rem;
+  }
 }
 abbr[data-original-title],
 abbr[title] {
@@ -4518,6 +4525,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
+  }
+  .pull-right{
+    position: relative;
+    left: 50rem;
   }
 }
 @media (min-width: 768px) {
